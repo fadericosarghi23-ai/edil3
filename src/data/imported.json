@@ -1,0 +1,199 @@
+{
+  "importedAt": "2026-11-19T15:22:30.860Z",
+  "origin": "https://www.impresaedil3.it",
+  "footer": {
+    "address": "Via Vescovera, 27043 Broni PV, Italia",
+    "phone": "+39 327 9052873",
+    "email": "rolandjaupi35@gmail.com",
+    "hours": "Lun - Ven 9:00 - 17:00 Sab - Dom Chiuso",
+    "vat": "02584670182",
+    "brand": ""
+  },
+  "pages": {
+    "/contatti": {
+      "url": "https://www.impresaedil3.it/contatti",
+      "title": "Costruzioni edili complete di tutto | Broni | Edil 3",
+      "description": "La Edil 3 di Broni realizza in provincia di Pavia lavori edili chiavi in mano. Per sopralluoghi e preventivi gratuiti chiamate il +39 327 9052873.",
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Lavori edili chiavi in mano a Broni, in provincia di Pavia"
+        },
+        {
+          "type": "p",
+          "text": "Via Vescovera, 27043 Broni PV, Italia"
+        },
+        {
+          "type": "p",
+          "text": "rolandjaupi35@gmail.com"
+        },
+        {
+          "type": "h2",
+          "text": "Orari di apertura"
+        },
+        {
+          "type": "h2",
+          "text": "Richiedi un preventivo per lavori edili compilando il modulo di contatto!"
+        },
+        {
+          "type": "p",
+          "text": "La Edil 3 di Broni, in provincia di Pavia, si occupa di edilizia privata e industriale, realizzando nuove costruzioni, ristrutturazioni, coibentazioni, rifiniture e ogni servizio collegato nell’ottica dello svolgimento di lavori edili chiavi in mano, ovvero completamente finiti e pronti da vivere. Potete affidarvi alla ditta e richiedere un sopralluogo e un preventivo gratuiti: chiamate in sede oppure compilate il modulo di contatto, e un incaricato dell’impresa vi ricontatterà nel più breve tempo possibile, pronto ad ascoltare le vostre necessità e a individuare insieme a voi la soluzione migliore."
+        }
+      ]
+    },
+    "/servizi": {
+      "url": "https://www.impresaedil3.it/servizi",
+      "title": "Costruzioni civili e industriali | Broni, PV | Edil 3",
+      "description": "La Edil 3 di Broni impresa edile che si occupa di edilizia civile e industriale “chiavi in mano”. Per info, preventivi e sopralluoghi, chiamate in sede.",
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Servizi di edilizia civile a Broni, in provincia di Pavia"
+        },
+        {
+          "type": "button",
+          "text": "Contatti",
+          "href": "/contatti"
+        },
+        {
+          "type": "p",
+          "text": "I servizi offerti dalla Edil 3 dei fratelli Jaupi di Broni, in provincia di Pavia, si rivolgono sia al settore dell’edilizia civile che a quello dell’edilizia commerciale e industriale. Ci sono operazioni sugli immobili, infatti, che possono tornare utili sia a una casa che a un ufficio o a un capannone. Di queste operazioni si occupa appunto la Edil 3: mansioni che vanno dalle ristrutturazioni, alle coibentazioni, passando per l'impiantistica e la pavimentazione. Lavorazioni edili, dunque, capaci di abbracciare molti campi e di soddisfare di conseguenza qualsiasi vostra necessità."
+        },
+        {
+          "type": "h2",
+          "text": "Edilizia civile e industriale"
+        },
+        {
+          "type": "p",
+          "text": "La Edil 3 di Broni si occupa quindi di ristrutturazioni interne ed esterne, sia civili che industriali. Si tratta di realizzazioni che vengono effettuate sempre con la massima professionalità ed attenzione nei confronti dei dettagli, occupandosi quindi di ogni elemento necessario per la riuscita di una buona costruzione, sia essa di edilizia civile o industriale. Fra le altre realizzazioni della Edil 3 di Broni rientrano anche le opere di restauro e di finitura, le opere di muratura, di impiantistica elettrica ed idraulica e molto altro ancora nell'ambito edile. Dalle fondamenta fino alle finiture, dagli infissi all’impiantistica, dai pavimenti al tetto: lo staff della Edil 3 è adeguatamente preparato per realizzare o rifinire l’immobile come lo avete sempre desiderato, per consegnarvelo “chiavi in mano."
+        },
+        {
+          "type": "h2",
+          "text": "Preventivi e sopralluoghi gratuiti"
+        },
+        {
+          "type": "p",
+          "text": "Ogni opera di costruzione, sia essa di edilizia civile o industriale, comincia con un sopralluogo ben realizzato: per questo non esitate a contattare la Edil 3 e richiedere che un membro della ditta venga ad effettuare un sopralluogo assolutamente gratuito. Allo stesso modo, potete richiedere gratuitamente informazioni e preventivi: sarà un vero piacere rispondere ai vostri dubbi e curiosità."
+        },
+        {
+          "type": "p",
+          "text": "Chiama per richiedere un sopralluogo e un preventivo gratuito!"
+        },
+        {
+          "type": "button",
+          "text": "Chiedi un preventivo!",
+          "href": "/contatti"
+        }
+      ]
+    },
+    "/": {
+      "url": "https://www.impresaedil3.it",
+      "title": "Impresa di costruzioni civili | Broni, PV | Edil 3",
+      "description": "L’impresa edile Edil 3 di Broni realizza costruzioni, restauri e rifiniture in provincia di Pavia. Per richiedere un preventivo gratuito chiamate in sede.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Costruiamo i vostri sogni con l'eccenza"
+        },
+        {
+          "type": "button",
+          "text": "Contatti",
+          "href": "/contatti"
+        },
+        {
+          "type": "h1",
+          "text": "Impresa edile leader a Broni, in provincia di Pavia"
+        },
+        {
+          "type": "p",
+          "text": "L'impresa edile Edil 3 dei fratelli Jaupi ha sede a Broni, provincia di Pavia, in via Vescovera al numero civico 8. Si occupa di costruzioni edili per uso sia civile che industriale, ma si occupa anche di coperture per tetti e manutenzione stabili. Inoltre, la Edil 3 si impegna anche nel rifacimento dei tetti attraverso opere di impermeabilizzazione e occupandosi anche dello smaltimento di amianto. Richiedendo l’intervento dell’impresa edile dei fratelli Jaupi potrete star certi di avere a vostra disposizione personale qualificato e professionale, il cui impegno per garantirvi un eccellente operato è massimo, in vista della soddisfazione delle vostre richieste."
+        },
+        {
+          "type": "button",
+          "text": "Servizi",
+          "href": "/servizi"
+        },
+        {
+          "type": "h2",
+          "text": "Costruzioni chiavi in mano"
+        },
+        {
+          "type": "p",
+          "text": "Il punto di forza dell’impresa edile Edil 3 di Broni è la sua capacità di occuparsi di ogni aspetto di una nuova costruzione, di qualunque genere sia. La ditta, infatti, si impegna con egual passione e professionalità nella realizzazione di case, villette, capannoni, fabbricati e altre strutture per uso sia civile che industriale. E di queste costruzioni, la Edil 3 può occuparsi di ogni dettaglio: dalle fondamenta al tetto, dall’imbiancatura alla posa dei pavimenti, dal giardino alle recinzioni, dai rivestimenti alle finiture di pregio. La Edil 3, quindi, realizza quello che di solito si definisce un servizio ‘chiavi in mano’ completo, rapido e rispettoso di tutte le normative vigenti. A voi non resterà altro che il piacere di abitare o di lavorare in un immobile rifinito sotto ogni aspetto."
+        },
+        {
+          "type": "h2",
+          "text": "L’eccellenza dell’edilizia pavese"
+        },
+        {
+          "type": "p",
+          "text": "La missione dell’impresa edile Edil 3 dei fratelli Jaupi di Broni è da sempre la costruzione dell’eccellenza. L’ambizione della ditta è quella di essere riconosciuta come impresa di costruzioni civili e industriali di altissimo profilo, e finora si tratta di un obiettivo raggiunto. Ma l’eccellenza deve essere continuamente ricercata, perché il livello non si ferma mai."
+        },
+        {
+          "type": "p",
+          "text": "Ogni giorno, quindi, l’impresa edile lavora puntando su un’organizzazione capillare e curata in ogni singolo dettaglio utilizzando strumenti gestionali e mezzi operativi tecnologicamente avanzati: solo così si può raggiungere un alto livello di eccellenza. Un’eccellenza però che non è fine a se stessa, ma che ha un obiettivo: garantire ai clienti la gestione completa e ottimale di ogni progetto, dall’inizio alla fine."
+        },
+        {
+          "type": "p",
+          "text": "Per i tuoi lavori di edilizia, chiama e richiedi un preventivo gratuito!"
+        },
+        {
+          "type": "button",
+          "text": "Chiedi un preventivo!",
+          "href": "/contatti"
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "id": "foto-007",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-007-2880w.jpg",
+      "width": 1920,
+      "height": 1280,
+      "stock": true
+    },
+    {
+      "id": "foto-005",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-005-1920w.jpg",
+      "width": 960,
+      "height": 637,
+      "stock": true
+    },
+    {
+      "id": "foto-006",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-006-1920w.jpg",
+      "width": 960,
+      "height": 668,
+      "stock": true
+    },
+    {
+      "id": "foto-004",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-004-2880w.jpg",
+      "width": 1920,
+      "height": 1282,
+      "stock": true
+    },
+    {
+      "id": "foto-001",
+      "source": "https://lirp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-001-1920w.jpg",
+      "width": 1920,
+      "height": 1281,
+      "stock": true
+    },
+    {
+      "id": "foto-002",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-002-1920w.jpg",
+      "width": 960,
+      "height": 640,
+      "stock": true
+    },
+    {
+      "id": "foto-003",
+      "source": "https://irp.cdn-website.com/57f0e9ae/dms3rep/multi/opt/edilizia-edil3-broni-003-1920w.jpg",
+      "width": 960,
+      "height": 641,
+      "stock": true
+    }
+  ]
+}

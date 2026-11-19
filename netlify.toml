@@ -1,0 +1,112 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ---- 301 dai vecchi indirizzi del sito Duda / Italiaonline ----
+# Duda pubblicava la home anche come /home; /servizi e /contatti restano agli stessi indirizzi
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servizi/"
+  to = "/servizi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contatti/"
+  to = "/contatti"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi/bonifica-amianto"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi/coperture-tetti"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi/costruzioni-chiavi-in-mano"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi/ristrutturazioni-finiture"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/servizi/impianti-manutenzione"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contatti"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cookie"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/note-legali"
+  to = "/index.html"
+  status = 200
+
+# tutto il resto: la SPA mostra la pagina 404, con codice 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

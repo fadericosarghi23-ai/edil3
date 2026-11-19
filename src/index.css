@@ -1,0 +1,257 @@
+/* font del sito attuale, ospitati in locale (nessuna richiesta a Google Fonts):
+   titoli Oswald, testi Open Sans; il logo è in Open Sans Bold */
+@import '@fontsource/oswald/latin-400.css';
+@import '@fontsource/oswald/latin-500.css';
+@import '@fontsource/oswald/latin-600.css';
+@import '@fontsource/oswald/latin-700.css';
+@import '@fontsource/open-sans/latin-400.css';
+@import '@fontsource/open-sans/latin-600.css';
+@import '@fontsource/open-sans/latin-700.css';
+@import 'tailwindcss' source('.');
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   Token EDIL3, estratti dal CSS calcolato di impresaedil3.it
+   (getComputedStyle su bottoni, titoli, logo e fascia CTA)
+   ============================================================ */
+:root {
+  /* identità */
+  --e3-navy: #102542; /* bottoni "Contatti", "Servizi", "Richiedi un sopralluogo!" */
+  --e3-sky: #74b9fc; /* "F.LLI JAUPI" nel logo, fascia CTA, link email */
+  --e3-ink: #111111; /* titoli Oswald */
+  --e3-ink-2: #141414; /* testo e logo */
+  --e3-text: #333333; /* testo della fascia CTA */
+  --e3-grey: #939393; /* testi secondari */
+  --e3-mist: #f3f3f3; /* fondi chiari */
+  --e3-mist-2: #f7f7f7;
+  --e3-white: #ffffff; /* fondo del sito */
+  /* sfumature ricavate dai colori di marca (non nuovi colori) */
+  --e3-navy-deep: color-mix(in oklab, var(--e3-navy) 82%, black);
+  --e3-navy-soft: color-mix(in oklab, var(--e3-navy) 86%, white);
+  --e3-sky-soft: color-mix(in oklab, var(--e3-sky) 22%, white);
+  --e3-sky-ink: color-mix(in oklab, var(--e3-sky) 55%, var(--e3-navy)); /* azzurro leggibile su bianco */
+  --e3-line: color-mix(in oklab, var(--e3-grey) 30%, white);
+  /* fibrocemento (solo nell'illustrazione dell'hero) */
+  --e3-eternit: #a7a49b;
+
+  /* shadcn */
+  --radius: 0.25rem;
+  --background: var(--e3-white);
+  --foreground: var(--e3-ink-2);
+  --card: var(--e3-white);
+  --card-foreground: var(--e3-ink-2);
+  --popover: var(--e3-white);
+  --popover-foreground: var(--e3-ink-2);
+  --primary: var(--e3-navy);
+  --primary-foreground: var(--e3-white);
+  --secondary: var(--e3-sky);
+  --secondary-foreground: var(--e3-navy);
+  --muted: var(--e3-mist);
+  --muted-foreground: color-mix(in oklab, var(--e3-grey) 60%, var(--e3-ink));
+  --accent: var(--e3-sky-soft);
+  --accent-foreground: var(--e3-navy);
+  --destructive: #c0392b;
+  --border: var(--e3-line);
+  --input: var(--e3-line);
+  --ring: var(--e3-sky);
+}
+
+@theme inline {
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', 'Arial Narrow', ui-sans-serif, sans-serif;
+
+  --color-navy: var(--e3-navy);
+  --color-navy-deep: var(--e3-navy-deep);
+  --color-navy-soft: var(--e3-navy-soft);
+  --color-sky: var(--e3-sky);
+  --color-sky-soft: var(--e3-sky-soft);
+  --color-sky-ink: var(--e3-sky-ink);
+  --color-ink: var(--e3-ink);
+  --color-ink-2: var(--e3-ink-2);
+  --color-text: var(--e3-text);
+  --color-grey: var(--e3-grey);
+  --color-mist: var(--e3-mist);
+  --color-mist-2: var(--e3-mist-2);
+  --color-line: var(--e3-line);
+  --color-eternit: var(--e3-eternit);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
+  }
+  html,
+  body {
+    overflow-x: clip;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+    line-height: 1.02;
+    letter-spacing: -0.005em;
+  }
+  ::selection {
+    background: var(--e3-sky);
+    color: var(--e3-navy);
+  }
+  :focus-visible {
+    outline: 2px solid var(--e3-sky);
+    outline-offset: 3px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+@layer utilities {
+  .container-e3 {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 3rem);
+  }
+  /* titolo display enorme, Oswald maiuscolo */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.88;
+    letter-spacing: -0.01em;
+  }
+  .eyebrow {
+    font-family: var(--font-display);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+  }
+  /* profilo ondulato delle lastre: usato come divisore e come texture */
+  .corrugate {
+    background-image: repeating-linear-gradient(
+      90deg,
+      color-mix(in oklab, currentColor 18%, transparent) 0 2px,
+      transparent 2px 14px,
+      color-mix(in oklab, currentColor 8%, transparent) 14px 16px,
+      transparent 16px 28px
+    );
+  }
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--outline, var(--e3-ink));
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* carta millimetrata (tavole tecniche): maglia fine + maglia da 1 cm */
+@utility millimetrata {
+  background-color: var(--e3-white);
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--e3-sky) 38%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--e3-sky) 38%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in oklab, var(--e3-sky) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--e3-sky) 16%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+}
+@utility millimetrata-dark {
+  background-color: var(--e3-navy);
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--e3-sky) 22%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--e3-sky) 22%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in oklab, var(--e3-sky) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--e3-sky) 8%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+}
+/* etichetta tecnica (sostituisce le "eyebrow" con trattino) */
+@utility tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+/* hero fotografico: su desktop la foto sfuma verso il cielo a sinistra e in alto */
+@media (min-width: 1024px) {
+  .hero-photo {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%), linear-gradient(180deg, transparent 0%, #000 14%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 22%), linear-gradient(180deg, transparent 0%, #000 14%);
+    mask-composite: intersect;
+  }
+}
+@media (max-width: 1023.98px) {
+  .hero-photo {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 22%);
+  }
+}
